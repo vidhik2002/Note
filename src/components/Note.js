@@ -3,7 +3,7 @@ const Note = () => {
     return (<div className= "notes">
         <span>text of the note</span>
         <div className="bottom">
-            <span>date goes here</span>
+            <span className="date">date goes here</span>
             <MdDeleteForever className="delete"/>
         </div>
     </div>)

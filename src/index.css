@@ -22,21 +22,28 @@ code {
   background-color: black;
   color: white;
   height: 30vh;
-  width: 20vw;
+  width: 25vh;
   border-radius: 5px;
   padding-left: 5px;
   padding-right: 8px;
   margin-bottom: 8px;
   margin-bottom: 5px;
   margin-top: 5px;
-  max-width: 175px;
+  max-width: 220px;
   background-repeat: repeat-x;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.date{
+  padding-bottom:5px;
+  padding-top:3px;
+}
+
+
 .bottom{
+  padding-bottom: 2px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -45,5 +52,16 @@ code {
 .list{
   display: grid;
   grid-template-columns: repeat(4, 200px);
+}
 
+
+.delete{
+  padding-top:6px;
+}
+@media screen and (max-width: 610px) {
+  .container {
+    display:flex;
+    flex-direction: column;
+    width: 94vw; 
+  }
 }
