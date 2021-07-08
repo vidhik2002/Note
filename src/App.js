@@ -1,4 +1,9 @@
+import List from './components/list';
 const App = () => {
-  return <p>react</p>;
+  return (
+    <div className="container">
+      <List />
+    </div>
+  );
 }
 export default App;
