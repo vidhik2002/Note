@@ -17,7 +17,27 @@ const App = () => {
       id: nanoid(),
       text: "NOTE3",
       date: "date",
-    }
+    },
+    {
+      id: nanoid(),
+      text: "NOTE1",
+      date: "date",
+    },
+    {
+      id: nanoid(),
+      text: "NOTE1",
+      date: "date",
+    },
+    {
+      id: nanoid(),
+      text: "NOTE1",
+      date: "date",
+    },
+    {
+      id: nanoid(),
+      text: "NOTE1",
+      date: "date",
+    },
   ]);
 
 
