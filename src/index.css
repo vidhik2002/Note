@@ -40,6 +40,38 @@ code {
   justify-content: space-between;
   white-space: pre-wrap;
 }
+
+.new {
+  background-color: grey;
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.type {
+  background-color: grey;
+  border: none;
+}
+
+textarea{
+  border: none;
+  resize: none;
+}
+
+textarea:focus{
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+::placeholder { 
+  color: white;
+}
     
 .bottom {
   display: flex;
