@@ -40,10 +40,12 @@ const App = () => {
     },
   ]);
 
-
+  const saveNote = (txt) => {
+    console.log(txt)
+  }
   return (
     <div className="container">
-      <List note={note} />
+      <List note={note} handlesaveNote={saveNote} />
     </div>
   );
 }

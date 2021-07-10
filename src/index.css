@@ -58,6 +58,18 @@ code {
   border: none;
 }
 
+.save{
+  border-radius: 15px;
+  border:none;
+}
+
+.save:hover{
+  background-color:black;
+  color:white;
+  border:none;
+  cursor:pointer;
+}
+
 textarea{
   border: none;
   resize: none;
