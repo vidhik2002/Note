@@ -1,14 +1,17 @@
 import { useState } from "react";
 
 const Add = ({handlesaveNote}) => {
-    const[addnote, setaddnote] = useState('')
+    const[addnote, setaddnote] = useState('')//text of the note
 
     const Change = (e) => {
         setaddnote(e.target.value)
     }
     const saveClick = () => {
-        handlesaveNote(addnote);
-        // setaddnote(e.target.value);
+        if(addnote.trim().length>0){
+            handlesaveNote(addnote);
+            setaddnote('')
+            // setaddnote(e.target.value);
+        }
     };
     return (
       <div className="new">

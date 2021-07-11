@@ -41,7 +41,15 @@ const App = () => {
   ]);
 
   const saveNote = (txt) => {
-    console.log(txt)
+    //console.log(txt)
+    const date = new Date()
+    const newNote = {
+      id : nanoid(),
+      text : txt,
+      date : date.toLocaleDateString(),
+    }
+    const newNotes =[...note, newNote]
+    setnote(newNotes)
   }
   return (
     <div className="container">
