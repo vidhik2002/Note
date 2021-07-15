@@ -28,6 +28,7 @@ code {
   auto-fill,
   minmax(250px, 1fr)
   );
+  margin-top: 25px;
 }
 .notes {
   background-color: black;
@@ -89,6 +90,10 @@ textarea:focus{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.delete {
+  cursor: pointer;
 }
         
     /* .bottom{
