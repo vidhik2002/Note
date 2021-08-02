@@ -1,43 +1,44 @@
 import { useState } from 'react';
 import { nanoid } from 'nanoid'
 import List from './components/list';
+import Search from './components/search'
 const App = () => {
   const [note, setnote] = useState([
-    {
-      id: nanoid(),
-      text: "NOTE1",
-      date: "date",
-    },
-    {
-      id: nanoid(),
-      text: "NOTE2",
-      date: "date",
-    },
-    {
-      id: nanoid(),
-      text: "NOTE3",
-      date: "date",
-    },
-    {
-      id: nanoid(),
-      text: "NOTE1",
-      date: "date",
-    },
-    {
-      id: nanoid(),
-      text: "NOTE1",
-      date: "date",
-    },
-    {
-      id: nanoid(),
-      text: "NOTE1",
-      date: "date",
-    },
-    {
-      id: nanoid(),
-      text: "NOTE1",
-      date: "date",
-    },
+    // {
+    //   id: nanoid(),
+    //   text: "NOTE1",
+    //   date: "date",
+    // },
+    // {
+    //   id: nanoid(),
+    //   text: "NOTE2",
+    //   date: "date",
+    // },
+    // {
+    //   id: nanoid(),
+    //   text: "NOTE3",
+    //   date: "date",
+    // },
+    // {
+    //   id: nanoid(),
+    //   text: "NOTE1",
+    //   date: "date",
+    // },
+    // {
+    //   id: nanoid(),
+    //   text: "NOTE1",
+    //   date: "date",
+    // },
+    // {
+    //   id: nanoid(),
+    //   text: "NOTE1",
+    //   date: "date",
+    // },
+    // {
+    //   id: nanoid(),
+    //   text: "NOTE1",
+    //   date: "date",
+    // },
   ]);
 
   const saveNote = (txt) => {
@@ -60,6 +61,7 @@ const App = () => {
 
   return (
     <div className="container">
+      <Search />
       <List note={note} handlesaveNote={saveNote} handledeleteNote={deleteNote}/>
     </div>
   );
