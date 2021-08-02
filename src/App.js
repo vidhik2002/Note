@@ -4,41 +4,42 @@ import List from './components/list';
 import Search from './components/search'
 const App = () => {
   const [note, setnote] = useState([
-    // {
-    //   id: nanoid(),
-    //   text: "NOTE1",
-    //   date: "date",
-    // },
-    // {
-    //   id: nanoid(),
-    //   text: "NOTE2",
-    //   date: "date",
-    // },
-    // {
-    //   id: nanoid(),
-    //   text: "NOTE3",
-    //   date: "date",
-    // },
-    // {
-    //   id: nanoid(),
-    //   text: "NOTE1",
-    //   date: "date",
-    // },
-    // {
-    //   id: nanoid(),
-    //   text: "NOTE1",
-    //   date: "date",
-    // },
-    // {
-    //   id: nanoid(),
-    //   text: "NOTE1",
-    //   date: "date",
-    // },
-    // {
-    //   id: nanoid(),
-    //   text: "NOTE1",
-    //   date: "date",
-    // },
+    {
+      id: nanoid(),
+      text: "hi im vidhi",
+      date: "date",
+    },
+    {
+      id: nanoid(),
+      text: "how u doin",
+      date: "date",
+    },
+    {
+      id: nanoid(),
+      text: "NOTE3",
+      date: "date",
+    },
+    {
+      id: nanoid(),
+      text: "idc at this point",
+      date: "date",
+    },
+    {
+      id: nanoid(),
+      text: "are u okay?",
+      date: "date",
+    },
+    {
+      id: nanoid(),
+      text: "esuse me hi",
+      date: "date",
+    },
+    {
+      id: nanoid(),
+      text: "bro",
+      date: "date",
+    },
+  
   ]);
 
   const saveNote = (txt) => {
@@ -58,11 +59,17 @@ const App = () => {
       setnote(newNotes)
   }
 
+  const [searchNote, setsearchNote] = useState('') 
 
   return (
     <div className="container">
-      <Search />
-      <List note={note} handlesaveNote={saveNote} handledeleteNote={deleteNote}/>
+      <p></p>
+      <Search handlesearchNote={setsearchNote}/>
+      <List note={note.filter((n) =>
+        n.text.toLowerCase().includes(searchNote)
+      )}
+      handlesaveNote={saveNote}
+      handledeleteNote={deleteNote}/>
     </div>
   );
 }

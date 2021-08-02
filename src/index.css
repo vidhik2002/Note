@@ -102,17 +102,17 @@ textarea:focus{
   min-height: 20px;
   display: flex;
   flex-direction: row;
-  white-space: pre-wrap;
+  /* white-space: pre-wrap; */
   padding-left: 0.3rem;
   padding-top:0.2rem;
   padding-right:0.5rem;
 }
-input {
+.input-search-bar {
   background-color: rgb(177, 167, 167);
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  white-space: pre-wrap;
+  /* white-space: pre-wrap; */
   outline: none;
   border: none;
   resize: none;

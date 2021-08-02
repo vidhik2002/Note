@@ -1,11 +1,16 @@
 import React from 'react'
 import { MdSearch } from 'react-icons/md'
-const Search = () => {
-    return(
+const Search = ({ handlesearchNote }) => {
+  return (
     <div className="search-bar">
-        <MdSearch className="searchicon"></MdSearch>
-        <input type="text" placeholder="type here..." classNname="input-search-bar"></input>
+      <MdSearch className="searchicon"></MdSearch>
+      <input
+        onChange={(e) => handlesearchNote(e.target.value)}
+        type="text"
+        placeholder="type here..."
+        className="input-search-bar"
+      ></input>
     </div>
-    )
-}
+  );
+};
 export default Search
