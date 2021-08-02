@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { nanoid } from 'nanoid'
 import List from './components/list';
-import Search from './components/search'
+import Search from './components/search';
+import Header from './components/header'
 const App = () => {
   const [note, setnote] = useState([
     {
@@ -63,7 +64,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <p></p>
+      <Header />
       <Search handlesearchNote={setsearchNote}/>
       <List note={note.filter((n) =>
         n.text.toLowerCase().includes(searchNote)
