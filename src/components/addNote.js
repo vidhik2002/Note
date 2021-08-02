@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Add = ({handlesaveNote}) => {
     const[addnote, setaddnote] = useState('')//text of the note
-    const characterLimit = 10
+    const characterLimit = 150
 
     const Change = (e) => {
         if(characterLimit - e.target.value.length >= 0 ){
