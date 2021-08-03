@@ -61,16 +61,20 @@ const App = () => {
   }
 
   const [searchNote, setsearchNote] = useState('') 
+  const [darkmode, setdarkmode] = useState(false)
+  const [lightmode, setlightmode] = useState(false);
 
   return (
+    <div className={`${darkmode && "dark-mode"}`}> {/* A template string */}
     <div className="container">
-      <Header />
+      <Header handleDark={setdarkmode} handleLight={setlightmode}/>
       <Search handlesearchNote={setsearchNote}/>
       <List note={note.filter((n) =>
         n.text.toLowerCase().includes(searchNote)
       )}
       handlesaveNote={saveNote}
       handledeleteNote={deleteNote}/>
+    </div>
     </div>
   );
 }

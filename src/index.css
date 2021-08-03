@@ -125,6 +125,32 @@ input:focus{
   resize: none;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.toggle-button {
+  margin-top: 0.5rem;
+  border-radius: 15px;
+  border:none;
+  width: 2rem;
+  height: 2rem;
+}
+
+.dark-mode {
+  background-color: rgb(241, 222, 222);
+}
+
+.dark-mode h1 {
+  color: white;
+}
 /* .input-search-bar {
   color: white;
   background-color: grey;
