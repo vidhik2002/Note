@@ -4,44 +4,7 @@ import List from './components/list';
 import Search from './components/search';
 import Header from './components/header'
 const App = () => {
-  const [note, setnote] = useState([
-    {
-      id: nanoid(),
-      text: "hi im vidhi",
-      date: "date",
-    },
-    {
-      id: nanoid(),
-      text: "how u doin",
-      date: "date",
-    },
-    {
-      id: nanoid(),
-      text: "NOTE3",
-      date: "date",
-    },
-    {
-      id: nanoid(),
-      text: "idc at this point",
-      date: "date",
-    },
-    {
-      id: nanoid(),
-      text: "are u okay?",
-      date: "date",
-    },
-    {
-      id: nanoid(),
-      text: "esuse me hi",
-      date: "date",
-    },
-    {
-      id: nanoid(),
-      text: "bro",
-      date: "date",
-    },
-    
-  ]);
+  const [note, setnote] = useState([]);
   const [searchNote, setsearchNote] = useState('') 
   useEffect(() => {
     const savedNotes = JSON.parse(
@@ -58,7 +21,6 @@ const App = () => {
   }, [note])
 
   const saveNote = (txt) => {
-    //console.log(txt)
     const date = new Date()
     const newNote = {
       id : nanoid(),
