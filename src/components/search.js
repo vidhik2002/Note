@@ -7,7 +7,7 @@ const Search = ({ handlesearchNote }) => {
       <input
         onChange={(e) => handlesearchNote(e.target.value)}
         type="text"
-        placeholder="type here..."
+        placeholder="type here to search..."
         className="input-search-bar"
       ></input>
     </div>
